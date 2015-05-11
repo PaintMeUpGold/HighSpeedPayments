@@ -7,13 +7,13 @@
 
     public class HomeController : Controller
     {
-        private readonly GetAllEmployees getAllEmployees;
-        private readonly CreateEmployee createEmployee;
-        private readonly GetEmployee getEmployee;
-        private readonly DeleteEmployee deleteEmployee;
-        private readonly EmployeeBenefitsCalculator benefitsCalculator;
+        private readonly IGetAllEmployees getAllEmployees;
+        private readonly ICreateEmployee createEmployee;
+        private readonly IGetEmployee getEmployee;
+        private readonly IDeleteEmployee deleteEmployee;
+        private readonly IEmployeeBenefitsCalculator benefitsCalculator;
 
-        public HomeController(GetAllEmployees getAllEmployees, CreateEmployee createEmployee, GetEmployee getEmployee, EmployeeBenefitsCalculator benefitsCalculator, DeleteEmployee deleteEmployee)
+        public HomeController(IGetAllEmployees getAllEmployees, ICreateEmployee createEmployee, IGetEmployee getEmployee, IEmployeeBenefitsCalculator benefitsCalculator, IDeleteEmployee deleteEmployee)
         {
             this.getAllEmployees = getAllEmployees;
             this.createEmployee = createEmployee;

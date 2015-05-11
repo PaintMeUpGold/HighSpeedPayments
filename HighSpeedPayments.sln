@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighVelocityPaymentsLibrary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighVelocityPaymentsWebApp", "HighVelocityPaymentsWebApp\HighVelocityPaymentsWebApp.csproj", "{345CC586-FC52-408D-8AA3-6FDFD0A53C6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighVelocityPaymentsWebApp.UnitTests", "HighVelocityPaymentsWebApp.UnitTests\HighVelocityPaymentsWebApp.UnitTests.csproj", "{56DF8E14-CF80-4393-854B-9BE3FBE496C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{345CC586-FC52-408D-8AA3-6FDFD0A53C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{345CC586-FC52-408D-8AA3-6FDFD0A53C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{345CC586-FC52-408D-8AA3-6FDFD0A53C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DF8E14-CF80-4393-854B-9BE3FBE496C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DF8E14-CF80-4393-854B-9BE3FBE496C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DF8E14-CF80-4393-854B-9BE3FBE496C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DF8E14-CF80-4393-854B-9BE3FBE496C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

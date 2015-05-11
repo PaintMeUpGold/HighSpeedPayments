@@ -1,7 +1,7 @@
 ﻿namespace HighVelocityPaymentsLibrary.DataAccess
 {
-    public interface IDataAccess
+    public interface IDeleteEmployee
     {
-         
+        void Execute(int id);
     }
 }

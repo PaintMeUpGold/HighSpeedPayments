@@ -4,7 +4,7 @@
     using DapperExtensions;
     using Model;
 
-    public class DeleteEmployee : IDataAccess
+    public class DeleteEmployee : IDeleteEmployee
     {
         private readonly IDbConnection connection;
 

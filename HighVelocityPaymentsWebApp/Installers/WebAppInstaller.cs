@@ -14,11 +14,11 @@
         {
             container.Register(
                 Component.For<IDbConnection>().UsingFactoryMethod(DatabaseConnectionFactory.Create).LifestyleTransient(),
-                Classes.FromAssemblyNamed("HighVelocityPaymentsLibrary").BasedOn<IDataAccess>(),
-                //Component.For<GetAllEmployees>(),
-                //Component.For<CreateEmployee>(),
-                //Component.For<GetEmployee>(),
-                Component.For<EmployeeBenefitsCalculator>(),
+                Component.For<IGetEmployee>().ImplementedBy<GetEmployee>().LifestyleTransient(),
+                Component.For<IGetAllEmployees>().ImplementedBy<GetAllEmployees>().LifestyleTransient(),
+                Component.For<ICreateEmployee>().ImplementedBy<CreateEmployee>().LifestyleTransient(),
+                Component.For<IDeleteEmployee>().ImplementedBy<DeleteEmployee>().LifestyleTransient(),
+                Component.For<IEmployeeBenefitsCalculator>().ImplementedBy<EmployeeBenefitsCalculator>().LifestyleTransient(),
                 Classes.FromThisAssembly().BasedOn<IController>().LifestyleTransient()
                 );
         }

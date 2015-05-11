@@ -41,6 +41,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,10 +52,14 @@
   <ItemGroup>
     <Compile Include="DataAccess\CreateEmployee.cs" />
     <Compile Include="DataAccess\DeleteEmployee.cs" />
-    <Compile Include="DataAccess\IDataAccess.cs" />
+    <Compile Include="DataAccess\ICreateEmployee.cs" />
+    <Compile Include="DataAccess\IDeleteEmployee.cs" />
+    <Compile Include="DataAccess\IGetAllEmployees.cs" />
+    <Compile Include="DataAccess\IGetEmployee.cs" />
+    <Compile Include="IEmployeeBenefitsCalculator.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="EmployeeBenefitsCalculator.cs" />
-    <Compile Include="Model\EmployeeBenefitsCostView.cs" />
+    <Compile Include="Model\EmployeeBenefitsCostViewModel.cs" />
     <Compile Include="DataAccess\GetAllEmployees.cs" />
     <Compile Include="DataAccess\GetEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,55 +1,66 @@
-﻿@model HighVelocityPaymentsLibrary.Model.EmployeeBenefitsCostView
+﻿@using Microsoft.Ajax.Utilities
+@model HighVelocityPaymentsLibrary.Model.EmployeeBenefitsCostViewModel
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Employee Details</h2>
 
 <fieldset>
     <legend>EmployeeBenefitsCostView</legend>
     
-    <div class="display-label">
+    <div class="display-label" style="font-weight: bold">
          @Html.DisplayNameFor(model => model.Name)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Name)
     </div>
+    <br/>
 
-    <div class="display-label">
+    <div class="display-label" style="font-weight: bold">
          @Html.DisplayNameFor(model => model.NumberOfDependents)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.NumberOfDependents)
     </div>
+    <br/>
 
-    <div class="display-label">
+    <div class="display-label" style="font-weight: bold">
          @Html.DisplayNameFor(model => model.EmployeeCost)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.EmployeeCost)
     </div>
+    <br/>
 
-    <div class="display-label">
+    <div class="display-label" style="font-weight: bold">
          @Html.DisplayNameFor(model => model.DependentCost)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.DependentCost)
     </div>
+    <br/>
     
-    <div class="display-label">
+    <div class="display-label" style="font-weight: bold">
          @Html.DisplayNameFor(model => model.TotalCost)
     </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.TotalCost)
     </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Notes)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Notes)
-    </div>
+    <br/>
+    
+    @if (@Model.IsDiscountApplied)
+    {
+        <div class="display-label" style="font-weight: bold">
+            @Html.DisplayNameFor(model => model.Notes)
+        </div>
+        <div class="display-field" style="color: green">
+            @Html.DisplayFor(model => model.Notes)
+        </div>
+    <br/>
+    }
+    
 </fieldset>
 <p>
     @Html.ActionLink("Back to List", "Index")

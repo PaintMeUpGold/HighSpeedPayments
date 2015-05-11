@@ -1,7 +1,8 @@
-﻿namespace HighVelocityPaymentsWebApp.App_Start
+﻿namespace HighVelocityPaymentsWebApp
 {
     using System.Configuration;
     using System.Reflection;
+
     using DbUp;
 
     public class RegisterDatabaseScripts
