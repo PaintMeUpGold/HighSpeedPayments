@@ -18,7 +18,9 @@
 
         private static void BootstrapContainer()
         {
-            container = new WindsorContainer().Install(FromAssembly.This());
+            container = new WindsorContainer()
+                .Install(Configuration.FromAppConfig())
+                .Install(FromAssembly.This());
 
             var controllerFactory = new WindsorControllerFactory(container.Kernel);
             ControllerBuilder.Current.SetControllerFactory(controllerFactory);
